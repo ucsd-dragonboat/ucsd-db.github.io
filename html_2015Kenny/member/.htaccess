@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Member Site"
-AuthUserFile "/home/ucsddrag/.htpasswds/public_html/member/passwd"
-require valid-user
