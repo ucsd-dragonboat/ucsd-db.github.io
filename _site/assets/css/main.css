@@ -5,7 +5,7 @@ html, body, div, h1, p, a, video { margin: 0; padding: 0; }
 ============================================================================= */
 html, body { padding: 0; margin: 0; }
 
-body { font-size: 16px; font-family: 'Oswald', sans-serif; line-height: 1.5; overflow: none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; color: #333; /*light black for body*/ background-color: #ECF0F1; /*fuzzy white*/ }
+body { height: 100vh; font-size: 16px; font-family: 'Oswald', sans-serif; line-height: 1.5; overflow: none; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; color: #333; /*light black for body*/ background-color: #ECF0F1; /*fuzzy white*/ }
 
 /* ============================================================================= Universally used divs
 ============================================================================= */
@@ -36,7 +36,9 @@ body { font-size: 16px; font-family: 'Oswald', sans-serif; line-height: 1.5; ove
 ============================================================================= */
 .sideNav_button { position: fixed; margin-right: 1rem; margin-top: 1rem; right: 0; font-size: 5vh; cursor: pointer; color: #ffffff !important; /*white*/ opacity: 1.0; text-shadow: #555 0.1rem  0.1rem  0.075rem; /*right, bottom, blur*/ z-index: 10; }
 
-.sideNav { height: 100%; position: fixed; z-index: 3; width: 0; top: 0; right: 0; font-size: 2vh; background-color: rgba(0, 0, 0, 0.8); transition: 0.5s; padding-top: 4rem; /*padding before first link*/ overflow: hidden; white-space: nowrap; display: -webkit-flex; display: flex; flex-direction: column; justify-content: space-between; }
+.sideNav { height: 100%; position: fixed; z-index: 3; width: 0; top: 0; right: 0; font-size: 2vh; background-color: rgba(0, 0, 0, 0.8); transition: 0.5s; padding-top: 4rem; /*padding before first link*/ overflow: hidden; white-space: nowrap; display: grid; grid-template-rows: 0.6fr 0.4fr; }
+
+.sideNavContact a { padding: 0.25rem 1rem 0.25rem 0.25rem; font-size: 2.5rem; color: white; text-decoration: none; }
 
 .sideLinks > a { padding: 0.25rem 1rem 0.25rem 0.25rem; /*dimension of the sideNav*/ text-align: right; text-decoration: none; font-size: 4.20vh; /*options for the sidebar*/ color: #cccccc; display: block; transition: 0.3s; }
 
@@ -79,7 +81,7 @@ body { font-size: 16px; font-family: 'Oswald', sans-serif; line-height: 1.5; ove
 
 /* ============================================================================= CONTENT HOMEPAGE
 ============================================================================= */
-.content_home { position: relative; top: 50%; transform: translateY(-50%); /* center the content in the middle vertically*/ z-index: 2; margin: 0 auto; max-width: 47.5rem; text-align: center; }
+.content_home { position: relative; top: 50%; transform: translateY(-50%); /* center the content in the middle vertically*/ z-index: 2; margin-left: auto; margin-right: auto; max-width: 47.5rem; text-align: center; }
 
 .content_logo { max-width: 70%; }
 
@@ -266,6 +268,7 @@ body { font-size: 16px; font-family: 'Oswald', sans-serif; line-height: 1.5; ove
 
 @media screen and (max-width: 768px) { .bottom_Merlin { border-left-width: 0; margin-top: -1rem; background-size: 60% 90%; } }
 footer { display: block; bottom: 0; padding: 64px, 0, 64px, 0; height: 200px; background-color: rgba(0, 0, 0, 0.8); }
+footer .fa { font-size: 2.5rem; }
 
 .description_text { /* margin-bottom: 3rem; */ font-size: 125%; text-align: center; }
 

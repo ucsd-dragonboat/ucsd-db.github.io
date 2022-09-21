@@ -23,6 +23,7 @@ body
 
 body 
 {
+  height: 100vh;
   font-size: 16px;
   font-family: 'Oswald', sans-serif;
   line-height: 1.5;
@@ -167,10 +168,15 @@ body
   padding-top: 4rem;/*padding before first link*/
   overflow: hidden;
   white-space: nowrap;
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: 0.6fr 0.4fr;
+}
+
+.sideNavContact a {
+  padding: 0.25rem 1rem 0.25rem 0.25rem;
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
 }
 
 .sideLinks > a 
@@ -343,7 +349,8 @@ body
   top: 50%;
   transform: translateY(-50%);/* center the content in the middle vertically*/
   z-index: 2;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 47.5rem;
   text-align: center;
 }
