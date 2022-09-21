@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	$("#recruitment_dropdown").on("click", function () {
+	// $("#recruitment_dropdown").on("click", function () {
 		$("#recruitment_dropdown_text").toggleClass("invisible");
 		$("#right_arrow").toggleClass("down_arrow_right");
 		$("#right_arrow").toggleClass("up_arrow_right");
@@ -33,9 +33,9 @@ $(document).ready(function () {
 							position: new google.maps.LatLng(32.885531, -117.240635),//Rimac Annex
 						}, {
 							position: new google.maps.LatLng(32.877204, -117.241835),//Natatorium
-						}, {
+						}, /*{
 							position: new google.maps.LatLng(32.8811438, -117.2349294), // Warren Mall
-						}/*,{
+						}, {
 							position: new google.maps.LatLng(32.879747, -117.239736),//Peterson Loop
 						}, {
 							position: new google.maps.LatLng(32.858705, -117.255538),//la Jolla Shores
@@ -50,12 +50,12 @@ $(document).ready(function () {
 			}
 			center();
 		}
-	});
+	// });
 
 	// no clicking on mobile device
 	if (window.matchMedia('(max-device-width: 768px)').matches) {
 		$("#recruitment_dropdown").parent().toggleClass("horz_block flex_center");
-		$("#recruitment_dropdown").html("<h3>2019 Recruitment Information</h3>");
+		$("#recruitment_dropdown").html("<h3>Recruitment Information</h3>");
 		$("#recruitment_dropdown").css("pointer-events", "none");
 		$("#recruitment_dropdown").off();
 		$("#recruitment_dropdown_text").toggleClass("invisible");
