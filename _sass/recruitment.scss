@@ -1,0 +1,183 @@
+/* =============================================================================
+  Recruitment Page
+============================================================================= */
+.recruit_table
+{
+  border-collapse: collapse;
+  width: 100%; 
+}
+
+.recruit_table, .recruit_table td
+{
+  border: 0.06rem solid #fff;/*white border*/;
+  text-align: left;
+  color:#1a397f;/*dark blue*/
+}
+
+.recruit_table tr {
+  background-color: #f7e285;/*light yellow color*/
+}
+
+.recruit_table tr:nth-child(odd) {
+  background-color: #f7e79f;/*light yellow color*/
+}
+
+.recruit_table th
+{
+  background-color:#1a397f;/*dark blue*/
+  color: #ECF0F1;/*fuzzy white*/
+}
+
+.recruit_table, .recruit_table th, .recruit_table td
+{
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) 
+{
+  .recruit_table, .recruit_table th, .recruit_table td
+  {
+    padding: 0.25rem;
+    font-size: 80%;
+  }
+
+}
+
+.recruitment_header{
+  background-color: #333333;
+  margin: 0;
+  width: 100%;
+}
+
+.recruitment_video_header{
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.recruitment_video
+{
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 2rem 2rem 2rem;
+
+}
+.recruitment_info
+{
+  text-align: center;
+}
+
+#map
+{
+  height: 650px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) 
+{
+ #map
+  {
+    height: 500px;
+  }
+
+}
+
+.recruitment_locations
+{
+  flex-direction: row;  
+}
+
+.location_pic
+{
+  flex: 0 0 48%;
+  margin: 1%;
+  font-size: 65%;
+}
+@media screen and (max-width: 768px) 
+{
+ .location_pic
+  {
+    flex: 0 0 100%;
+  }
+
+}
+
+.location_pic img
+{
+  width: 100%;
+  height: 100%;
+}
+
+.white_block{
+  background-color:#ECF0F1;
+  color: black;
+}
+
+#recruitment_dropdown:hover{
+  cursor: pointer;
+}
+
+.invisible{
+  display: none;
+}
+
+.recruitment_arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down_arrow_right{
+  transform: rotate(45deg) translateX(6px) translateY(-12px);
+  -webkit-transform: rotate(45deg) translateX(6px) translateY(-12px);
+}
+
+.up_arrow_right{
+  transform: rotate(-135deg) translateX(-12px) translateY(12px);
+  -webkit-transform: rotate(-135deg) translateX(-12px) translateY(12px);
+}
+
+.down_arrow_left{
+  transform: rotate(45deg) translateX(-12px) translateY(6px);
+  -webkit-transform: rotate(45deg) translateX(-12px) translateY(6px);
+}
+
+.up_arrow_left{
+  transform: rotate(-135deg) translateX(12px) translateY(-12px);
+  -webkit-transform: rotate(-135deg) translateX(12px) translateY(-12px);
+}
+
+.message_recruitment_over_cover{
+  width: 100%;
+  background-color: rgb(250, 100, 0);
+  display: none;
+}
+
+.message_recruitment_over_content{
+  background-color: #fefefe;
+  padding: 10px;
+  margin: 2% 5% 2% 5%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1rem;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.recruitment-info-mobile{
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 95%;
+}

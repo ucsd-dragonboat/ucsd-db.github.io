@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta name="description" content="The Official Home Page of the UCSD Dragon Boat Team">
+	<meta name="author" description="UCSD Dragon Boat">
+	<meta name="google-site-verification" content="2JjtZlMWhG8jtZbgZr6KblhSsb59N10OEYGkNbS7e5w" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400,700|Cabin">
+	<link rel="icon" type="image/png" href="img/dbFavicon.png">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/brands.css' | relative_url }}">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><!--jquery-->
+	<script type="text/javascript"  src="{{ site.baseurl }}/assets/js/sideNav.js"> </script> <!-- our own js file-->
+</head>
+
+<body>
+    <!-- {% include header.html %} -->
+	{% include side-nav.html %}
+
+    {{ content }}
+</body>
+
+</html>
