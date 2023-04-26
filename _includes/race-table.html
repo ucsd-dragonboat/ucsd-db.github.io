@@ -1,21 +1,59 @@
 <div>
     <p class="race_name">
-        <a href="{{ include.results.resultsLink }}" target="_blank">
+        <a href="{{ include.race-info.resultsLink }}" target="_blank">
             {{ include.race-info.raceName }}
         </a>
     </p>
     <table class="results_table">
-        <tr class="info_row">
-            <th>{{ include.race-info.raceLocation }}</td>
-            <th></th>
-            <th>{{ include.race-info.raceDate }}</th>
-        </tr>
-        {% for n in include.race-info.rounds[0].events %}
         <tr>
-            <td>{{ n.eventName }}</td>
-            <td>{{ n.place }}</td>
-            <td>{{ n.time }}</td>
+            <th colspan="3">
+                <div class="table-race-info">
+                    <span>{{ include.race-info.raceLocation }}</span>
+                    <span>{{ include.race-info.raceDate }}</span>
+                </div>
+                <div class="round-toggle-cont">
+                    {% for n in include.race-info.rounds %}
+                    <div class="round-toggle-btn" id="{{ n.roundName }}">{{ n.roundName }}</div>
+                    {% endfor %}
+                </div>
+            </th>
         </tr>
+        {% for round in include.race-info.rounds %}
+        <tbody id="{{ round.roundName | append: '-body' }}">
+            {% for n in round.events %}
+            <tr>
+                <td>{{ n.eventName }}</td>
+                <td>{{ n.place }}</td>
+                <td>
+                    <div class="time-info-cont">
+                        <span>{{ n.time }}</span>
+                        <img src="img/infoIcon.svg">
+                    </div>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
         {% endfor %}
     </table>
 </div>
+<script>
+    // Enable tabs for switching between tabs.
+    for (const roundButton of document.querySelectorAll(".round-toggle-btn")) {
+        roundButton.addEventListener('click', (event) => {
+            for (const button of document.querySelectorAll(".round-toggle-btn")) {
+                if (button.id == event.srcElement.id) {
+                    // Button was selected.
+                    button.style.background = "#1e439415"; // Light blue background color.
+                    document.querySelector(`#${button.id}-body`).style.display = 'block';
+                } else {
+                    // Button is not selected.
+                    button.style.background = 'white';
+                    document.querySelector(`#${button.id}-body`).style.display = 'none';
+                }
+            }
+            // console.log(event.srcElement.id);
+        })
+    }
+    // When the page loads, the first round is selected.
+    document.querySelector(".round-toggle-btn").click();
+</script>
