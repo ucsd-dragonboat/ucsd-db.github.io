@@ -1,0 +1,21 @@
+<div>
+    <p class="race_name">
+        <a href="{{ include.results.resultsLink }}" target="_blank">
+            {{ include.race-info.raceName }}
+        </a>
+    </p>
+    <table class="results_table">
+        <tr class="info_row">
+            <th>{{ include.race-info.raceLocation }}</td>
+            <th></th>
+            <th>{{ include.race-info.raceDate }}</th>
+        </tr>
+        {% for n in include.race-info.rounds[0].events %}
+        <tr>
+            <td>{{ n.eventName }}</td>
+            <td>{{ n.place }}</td>
+            <td>{{ n.time }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
