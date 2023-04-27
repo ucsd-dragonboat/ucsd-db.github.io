@@ -60,7 +60,7 @@ const raceRoundTabs = [];
 '{% for round in include.race-info.rounds %}'
     raceRoundTabs.push(document.querySelector('#{{ round.roundName | append: raceId }}'));
 '{% endfor %}'
-// const raceRoundTabs = document.querySelectorAll('.tabs{{ raceId }}');
+
 for (const raceRoundTab of raceRoundTabs) {
     raceRoundTab.addEventListener('click', () => {
         // When a race round button is pressed, go through all the race-round tables
@@ -86,6 +86,7 @@ for (const raceRoundTab of raceRoundTabs) {
 // When the page loads, the first round is selected.
 raceRoundTabs[0].click();
 
+// These are the buttons on the time for each event.
 const raceRankingButtons = [];
 '{% for round in include.race-info.rounds %}'
     '{% for event in round.events %}'
@@ -93,8 +94,7 @@ const raceRankingButtons = [];
             document.querySelector('#{{ event.eventName | append: round.roundName | append: raceId | remove: " " }}'));
     '{% endfor %}'
 '{% endfor %}'
-console.log(raceRankingButtons);
-// const raceRankingButtons = document.querySelectorAll(".event_ranking{{ raceId }}");
+
 for (const raceRankingButton of raceRankingButtons) {
     console.log('hi')
     raceRankingButton.addEventListener('click', () => {
