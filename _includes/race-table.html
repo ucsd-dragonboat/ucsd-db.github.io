@@ -75,11 +75,18 @@
     document.querySelector(".round-toggle-btn").click();
 
     for (const timeInfo of document.querySelectorAll(".time-info")) {
-        timeInfo.addEventListener('click', () => {
-            const timeBodyInfo = document.querySelector(`#${timeInfo.id}-body`);
-            const currDisplayStyle = timeBodyInfo.style.display;
-            // Toggle visibilty of time info when button clicked.
-            timeBodyInfo.style.display = currDisplayStyle == 'table-cell' ? 'none' : 'table-cell';
+        timeInfo.addEventListener('click', (event) => {
+            for (const timeId of document.querySelectorAll(".time-info")) {
+                const timeBodyInfo = document.querySelector(`#${timeId.id}-body`);
+                if (event.srcElement.id == timeId.id) {
+                    const currDisplayStyle = timeBodyInfo.style.display;
+                    // Toggle visibilty of time info when button clicked.
+                    timeBodyInfo.style.display = currDisplayStyle == 'table-cell' ? 'none' : 'table-cell';
+                } else {
+                    // Close all other open event infos.
+                    timeBodyInfo.style.display = 'none';
+                }
+            }
         })
     }
 </script>
