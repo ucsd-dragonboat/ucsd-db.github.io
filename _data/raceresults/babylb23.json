@@ -1,0 +1,280 @@
+{
+    "raceName": "Spring Long Beach Dragon Boat Festival",
+    "raceLocation": "Marine Stadium - Long Beach, CA",
+    "raceDate": "4/23/23",
+    "resultsLink": "https://www.scdbc.org/about-3-1",
+    "raceId": "4_23_23",
+    "rounds": [{
+        "roundName": "Prelims",
+        "events": [{
+            "eventName": "Mixed Division A 500m",
+            "time": "2:13.428",
+            "place": "1st",
+            "videoLink": "https://www.youtube.com/watch?v=R8-lGdtopuc",
+            "ranking": [{
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "2:13.428"
+            },
+            {
+                "boatName": "AeroDragons Delta",
+                "time": "2:18.355"
+            },
+            {
+                "boatName": "LA County DBC 2",
+                "time": "2:41.733"
+            },
+            {
+                "boatName": "USC Dragon Boat 2",
+                "time": "3:01.263"
+            }] 
+        },
+        {
+            "eventName": "Mixed Division B 500m",
+            "time": "2:19.628",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=K06dclU2Jm4",
+            "ranking": [{
+                "boatName": "Rising Tide",
+                "time": "2:13.758"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "2:19.628"
+            },
+            {
+                "boatName": "Space Dragons",
+                "time": "2:36.461"
+            },
+            {
+                "boatName": "Team Synergy",
+                "time": "3:02.151"
+            }]
+        },
+        {
+            "eventName": "Mixed Division A 200m",
+            "time": "0:53.992",
+            "place": "1st",
+            "videoLink": "https://www.youtube.com/watch?v=dm3w2Wiz6uM",
+            "ranking": [{
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "0:53.992"
+            },
+            {
+                "boatName": "UCLA Blue",
+                "time": "0:54.372"
+            },
+            {
+                "boatName": "Killer Guppies - Fat Fish",
+                "time": "0:55.796"
+            },
+            {
+                "boatName": "Team Synergy",
+                "time": "1:12.607"
+            }]
+        },
+        {
+            "eventName":"Mixed Division B 200m",
+            "time": "0:56.470",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=WAgIsE5VrEg",
+            "ranking": [{
+                "boatName": "Rising Tide",
+                "time": "0:53.258"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "0:56.470"
+            },
+            {
+                "boatName": "Space Dragons",
+                "time": "1:01.791"
+            },
+            {
+                "boatName": "Electric Dragons",
+                "time": "1:05.644"
+            }]
+        }]
+    },
+    {
+        "roundName": "Semifinals",
+        "events": [{
+            "eventName": "Mixed Division A 500m",
+            "time": "2:11.878",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=XzMm85PlmTU",
+            "ranking": [{
+                "boatName": "Cal Dragon Boat 1",
+                "time": "2:11.866"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "2:11.878"
+            },
+            {
+                "boatName": "UCLA Blue",
+                "time": "2:13.858"
+            },
+            {
+                "boatName": "UCLA Gold",
+                "time": "2:24.916"
+            }]
+        },
+        {
+            "eventName": "Mixed Division B 500m",
+            "time": "2:20.637",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=M8eXBsodKA4",
+            "ranking": [{
+                "boatName": "LA County DBC 1",
+                "time": "2:20.283"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "2:20.637"
+            },
+            {
+                "boatName": "Killer Guppies - Fat Fish",
+                "time": "2:20.791"
+            },
+            {
+                "boatName": "AeroDragons Atlas",
+                "time": "2:38.923"
+            }]
+        },
+        {
+            "eventName": "Mixed Division A 200m",
+            "time": "0:55.578",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=c2KOYcd1oa4",
+            "ranking": [{
+                "boatName": "Rising Tide",
+                "time": "0:53.280"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "0:55.578"
+            },
+            {
+                "boatName": "LA County DBC 1",
+                "time": "0:57.886"
+            },
+            {
+                "boatName": "Rogue Paddling Club 1",
+                "time": "0:58.130"
+            }]
+        },
+        {
+            "eventName": "Mixed Division B 200m",
+            "time": "0:56.438",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=WAgIsE5VrEg",
+            "ranking": [{
+                "boatName": "UCLA Blue",
+                "time": "0:55.128"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "0:56.438"
+            },
+            {
+                "boatName": "UCLA Gold",
+                "time": "0:56.550"
+            },
+            {
+                "boatName": "L.A. Thunder Dragons",
+                "time": "0:57.390"
+            }]
+        }]
+    },
+    {
+        "roundName": "Finals",
+        "events": [{
+            "eventName": "Mixed Division A 500m",
+            "time": "2:12.978",
+            "place": "3rd",
+            "videoLink": "https://www.youtube.com/watch?v=9JmxsAubEJQ",
+            "ranking": [{
+                "boatName": "Rising Tide",
+                "time": "2:05.551"
+            },
+            {
+                "boatName": "Cal Dragon Boat 1",
+                "time": "2:08.173"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "2:12.978"
+            },
+            {
+                "boatName": "UCI Elements - Thunder",
+                "time": "2:13.241"
+            }]
+        },
+        {
+            "eventName": "Mixed Division B 500m",
+            "time": "2:18.809",
+            "place": "4th",
+            "videoLink": "https://www.youtube.com/watch?v=WTc5GSH_6UM",
+            "ranking": [{
+                "boatName": "AeroDragons Delta",
+                "time": "2:11.725"
+            },
+            {
+                "boatName": "Los Angeles Racing Dragons",
+                "time": "2:18.704"
+            },
+            {
+                "boatName": "LA County DBC 1",
+                "time": "2:18.795"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "2:18.809"
+            }]
+        },
+        {
+            "eventName": "Mixed Division A 200m",
+            "time": "0:54.373",
+            "place": "4th",
+            "videoLink": "https://www.youtube.com/watch?v=Wgd5e1bWNCU",
+            "ranking": [{
+                "boatName": "Rising Tide",
+                "time": "0:51.721"
+            },
+            {
+                "boatName": "AeroDragons Delta",
+                "time": "0:53.209"
+            },
+            {
+                "boatName": "Cal Dragon Boat 1",
+                "time": "0:53.383"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 1",
+                "time": "0:54.373"
+            }]
+        },
+        {
+            "eventName": "Mixed Division B 200m",
+            "time": "0:57.646",
+            "place": "2nd",
+            "videoLink": "https://www.youtube.com/watch?v=h0eXaE8wI08",
+            "ranking": [{
+                "boatName": "UCLA Blue",
+                "time": "0:54.064"
+            },
+            {
+                "boatName": "UCSD Dragon Boat Team 2",
+                "time": "0:57.646"
+            },
+            {
+                "boatName": "Los Angeles Racing Dragons",
+                "time": "0:57.649"
+            },
+            {
+                "boatName": "Team Dragon Eyes",
+                "time": "1:00.947"
+            }]
+        }]
+    }]
+}

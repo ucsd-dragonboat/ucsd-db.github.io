@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Race Results
 ---
 
 <body>
@@ -52,6 +53,9 @@ layout: default
 							</tr>
                         </table>
                     </div>
+					<div class="race_card">
+						{% include race-table.html race-info=site.data.raceresults.babylb23 %}
+					</div>
 				</div><!--end of results_part grid-->
 			</div><!-- end of season_part grid-->
 		</div><!--end of block season 2022-2023-->
