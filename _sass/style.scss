@@ -780,21 +780,34 @@ body
   cursor: pointer;
 }
 
-.time-info-cont {
+.table-clickable {
+  text-decoration: none;
+  cursor: pointer;
+  border-bottom: 1px #1e4394 solid;
+}
+
+.table-clickable:hover {
+  background-color: #1e439415;
+  transition-duration: 0.2s;
+}
+
+.watch-race {
+  font-style: italic;
+  color: inherit;
+  display: block; // Required for margin-bottom to work.
+  margin-bottom: 0.4em;
+}
+
+.ranking-cont {
   display: flex;
   justify-content: space-between;
 }
 
-.time-info-cont img {
-  width: 0.9em;
-  padding-left: 0.3em;
-  cursor: pointer;
-  // Same dark blue color as text: https://codepen.io/sosuke/pen/Pjoqqp
-  filter: invert(19%) sepia(25%) saturate(6306%) hue-rotate(211deg) brightness(91%) contrast(87%);
+.race-event-info {
+  background-color: #1e439415 !important; // TODO: remove !important and change css of .table tds
+  font-size: 80%;
+  display: none;
 }
-
-
-
 
 /* =============================================================================
   sponsors Page

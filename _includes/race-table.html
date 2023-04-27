@@ -12,23 +12,38 @@
                     <span>{{ include.race-info.raceDate }}</span>
                 </div>
                 <div class="round-toggle-cont">
-                    {% for n in include.race-info.rounds %}
-                    <div class="round-toggle-btn" id="{{ n.roundName }}">{{ n.roundName }}</div>
+                    {% for round in include.race-info.rounds %}
+                    {% assign roundId = round.roundName | append: include.race-info.raceId | remove: ' ' %}
+                    <div class="round-toggle-btn" id="{{ roundId }}">{{ round.roundName }}</div>
                     {% endfor %}
                 </div>
             </th>
         </tr>
         {% for round in include.race-info.rounds %}
-        <tbody id="{{ round.roundName | append: '-body' }}">
-            {% for n in round.events %}
+        {% assign roundId = round.roundName | append: include.race-info.raceId | remove: ' ' %}
+        <tbody id="{{ roundId | append: '-body' }}">
+            {% for event in round.events %}
+            {% assign eventId = roundId | append: event.eventName | remove: ' ' %}
             <tr>
-                <td>{{ n.eventName }}</td>
-                <td>{{ n.place }}</td>
+                <td>{{ event.eventName }}</td>
+                <td>{{ event.place }}</td>
                 <td>
-                    <div class="time-info-cont">
-                        <span>{{ n.time }}</span>
-                        <img src="img/infoIcon.svg">
+                    <span class="table-clickable time-info" id="{{ eventId }}">
+                        {{ event.time }}
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" class="race-event-info" id="{{ eventId | append: '-body' }}">   
+                    <a class="table-clickable watch-race" href="{{ event.videoLink }}" target="_blank">
+                        Watch Race - {{ event.eventName }} - {{ round.roundName }}
+                    </a>
+                    {% for boat in event.ranking %}
+                    <div class="ranking-cont">
+                        <span>{{ boat.boatName }}</span>
+                        <span>{{ boat.time }}</span>
                     </div>
+                    {% endfor %}
                 </td>
             </tr>
             {% endfor %}
@@ -44,10 +59,12 @@
                 if (button.id == event.srcElement.id) {
                     // Button was selected.
                     button.style.background = "#1e439415"; // Light blue background color.
+                    button.style.cursor = "default";
                     document.querySelector(`#${button.id}-body`).style.display = 'block';
                 } else {
                     // Button is not selected.
                     button.style.background = 'white';
+                    button.style.cursor = "pointer";
                     document.querySelector(`#${button.id}-body`).style.display = 'none';
                 }
             }
@@ -56,4 +73,13 @@
     }
     // When the page loads, the first round is selected.
     document.querySelector(".round-toggle-btn").click();
+
+    for (const timeInfo of document.querySelectorAll(".time-info")) {
+        timeInfo.addEventListener('click', () => {
+            const timeBodyInfo = document.querySelector(`#${timeInfo.id}-body`);
+            const currDisplayStyle = timeBodyInfo.style.display;
+            // Toggle visibilty of time info when button clicked.
+            timeBodyInfo.style.display = currDisplayStyle == 'table-cell' ? 'none' : 'table-cell';
+        })
+    }
 </script>
