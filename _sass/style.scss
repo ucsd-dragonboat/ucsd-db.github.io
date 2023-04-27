@@ -756,18 +756,18 @@ body
 
 }
 
-.table-race-info {
+.race_table_header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   font-size: 80%;
 }
 
-.round-toggle-cont {
+.race_table_rounds_cont {
   display: flex;
 }
 
-.round-toggle-btn {
+.race_round_tab {
   font-size: 80%;
   font-style: italic;
   font-weight: normal;
@@ -780,34 +780,35 @@ body
   cursor: pointer;
 }
 
-.table-clickable {
+.table_clickable {
   text-decoration: none;
   cursor: pointer;
   border-bottom: 1px #1e4394 solid;
 }
 
-.table-clickable:hover {
+.table_clickable:hover {
   background-color: #1e439415;
   transition-duration: 0.2s;
 }
 
-.watch-race {
+.event_ranking_body {
+  background-color: #1e439415 !important; // TODO: remove !important and change css of .table tds
+  font-size: 90%;
+  display: none;
+}
+
+.race_video_link {
   font-style: italic;
   color: inherit;
   display: block; // Required for margin-bottom to work.
   margin-bottom: 0.4em;
 }
 
-.ranking-cont {
+.race_ranking_cont {
   display: flex;
   justify-content: space-between;
 }
 
-.race-event-info {
-  background-color: #1e439415 !important; // TODO: remove !important and change css of .table tds
-  font-size: 80%;
-  display: none;
-}
 
 /* =============================================================================
   sponsors Page
