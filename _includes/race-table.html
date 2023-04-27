@@ -56,18 +56,18 @@
 </div>
 <script>
 // Buttons for switching between race rounds.
-const raceRoundTabs = [];
+const raceRoundTabs{{ raceId }} = [];
 '{% for round in include.race-info.rounds %}'
-    raceRoundTabs.push(document.querySelector('#{{ round.roundName | append: raceId }}'));
+    raceRoundTabs{{ raceId }}.push(document.querySelector('#{{ round.roundName | append: raceId }}'));
 '{% endfor %}'
 
-for (const raceRoundTab of raceRoundTabs) {
+for (const raceRoundTab of raceRoundTabs{{ raceId }}) {
     raceRoundTab.addEventListener('click', () => {
         // When a race round button is pressed, go through all the race-round tables
         // and toggle their visibility. Set the race round body corresponding to the
         // pressed button and turn its visibility on, and turn off other race rounds'
         // visibiilties.
-        for (const otherRaceRoundTab of raceRoundTabs) {
+        for (const otherRaceRoundTab of raceRoundTabs{{ raceId }}) {
             const raceRoundBody = document.querySelector(`#${otherRaceRoundTab.id}-body`);
             if (otherRaceRoundTab.id == raceRoundTab.id) {
                 // This round was selected.
@@ -84,24 +84,24 @@ for (const raceRoundTab of raceRoundTabs) {
     })
 }
 // When the page loads, the first round is selected.
-raceRoundTabs[0].click();
+raceRoundTabs{{ raceId }}[0].click();
 
 // These are the buttons on the time for each event.
-const raceRankingButtons = [];
+const raceRankingButtons{{ raceId }} = [];
 '{% for round in include.race-info.rounds %}'
     '{% for event in round.events %}'
-        raceRankingButtons.push(
+        raceRankingButtons{{ raceId }}.push(
             document.querySelector('#{{ event.eventName | append: round.roundName | append: raceId | remove: " " }}'));
     '{% endfor %}'
 '{% endfor %}'
 
-for (const raceRankingButton of raceRankingButtons) {
+for (const raceRankingButton of raceRankingButtons{{ raceId }}) {
     raceRankingButton.addEventListener('click', () => {
         // When a race event button is pressed, go through all the race event tables
         // and toggle their visibility. Set the race event body corresponding to the
         // pressed button and turn its visibility on, and turn off other race events'
         // visibiilties.
-        for (const otherRaceRankingButton of raceRankingButtons) {
+        for (const otherRaceRankingButton of raceRankingButtons{{ raceId }}) {
             const raceRankingBody = document.querySelector(`#${otherRaceRankingButton.id}-body`);
             if (raceRankingButton.id == otherRaceRankingButton.id) {
                 const currDisplayStyle = raceRankingBody.style.display;
