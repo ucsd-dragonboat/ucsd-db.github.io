@@ -45,6 +45,15 @@ body
   margin: 2rem auto;
   position: relative; 
 }
+.vert_block
+{
+  display: -webkit-flex;
+  display: flex;
+  width: 82.5%;
+  margin: 2rem auto;
+  position: relative; 
+  flex-direction: column;
+}
 @media screen and (max-width: 768px) 
 {
   .horz_block
@@ -536,6 +545,19 @@ body
   width: 100%;
 }
 
+.recruitment_table tr th {
+  background-color: gray;
+}
+
+.recruitment_table th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.recruitment_table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
 
 #portrait_block .section_header
 {
