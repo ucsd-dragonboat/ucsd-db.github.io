@@ -4,28 +4,28 @@
 .recruit_table
 {
   border-collapse: collapse;
-  width: 100%; 
+  width: 100%;
 }
 
 .recruit_table, .recruit_table td
 {
   border: 0.06rem solid #fff;/*white border*/;
   text-align: left;
-  color:#1a397f;/*dark blue*/
+  color:#000000;/*dark blue*/
 }
 
 .recruit_table tr {
-  background-color: #f7e285;/*light yellow color*/
+  background-color: rgba(133, 207, 219, 0.87);/*light yellow color*/
 }
 
 .recruit_table tr:nth-child(odd) {
-  background-color: #f7e79f;/*light yellow color*/
+  background-color: rgba(197, 236, 241, 0.87);/*light yellow color*/
 }
 
 .recruit_table th
 {
-  background-color:#1a397f;/*dark blue*/
-  color: #ECF0F1;/*fuzzy white*/
+  background-color: rgba(94, 161, 163, 0.87);/*dark blue*/
+  color: #000000;/*fuzzy white*/
 }
 
 .recruit_table, .recruit_table th, .recruit_table td
@@ -43,7 +43,7 @@
 }
 
 .recruitment_header{
-  background-color: #333333;
+  background-color: #6cb8c5;
   margin: 0;
   width: 100%;
 }
